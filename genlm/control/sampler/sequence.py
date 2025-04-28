@@ -47,8 +47,8 @@ class SMC:
     """
 
     def __init__(self, unit_sampler, critic=None):
-        if not isinstance(unit_sampler, TokenSampler):
-            raise ValueError("`unit_sampler` must be a TokenSampler")
+        #if not isinstance(unit_sampler, TokenSampler):
+        #    raise ValueError("`unit_sampler` must be a TokenSampler")
 
         if critic:
             if not isinstance(critic, Potential):
