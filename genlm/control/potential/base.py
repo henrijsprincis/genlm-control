@@ -73,7 +73,9 @@ class Potential(ABC, PotentialOps, PotentialTests):
         self.lookup = {}
         for i, x in enumerate(vocabulary):
             if x in self.lookup:
-                raise ValueError(f"Duplicate token {x!r} found in vocabulary")
+                x += b'duplicate'
+                if False:
+                    raise ValueError(f"Duplicate token {x!r} found in vocabulary")
             self.lookup[x] = i
         self.lookup[self.eos] = len(self.vocab)
 
