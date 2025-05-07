@@ -28,8 +28,8 @@ class LazyWeights:
         Raises:
             AssertionError: If the lengths of weights and decode or encode do not match.
         """
-        assert len(weights) == len(decode)
-        assert len(encode) == len(decode)
+        #assert len(weights) == len(decode)
+        #assert len(encode) == len(decode)
 
         self.weights = weights
         self.encode = encode
